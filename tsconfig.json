@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    
+    /* Language and Environment */
+    "target": "es2017",                                 
+
+    /* Modules */
+    "module": "commonjs",    
+    "allowJs": true,                            
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,                    
+    "skipLibCheck": true                                 
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

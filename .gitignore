@@ -1,0 +1,8 @@
+node_modules/**/*
+
+npm-debug.*
+
+.env
+Dockerfile
+docker-compose.yml  
+yarn.lock
