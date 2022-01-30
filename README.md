@@ -1,6 +1,6 @@
 # api-solid
 
-This is a project where I'm studying a little about SOLID
+This is a project where I'm studying a little about SOLID, this application create a user and send an email
 
 
 ## Setup
