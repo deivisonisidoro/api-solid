@@ -1,8 +1,11 @@
 import { DeleteUserUseCase } from "./DeleteUserUseCase";
 import {DeleteUserController} from "./DeleteUserController";
+import { MySQLUsersRepository } from "../../../repositories/implementations/MySQLUsersRepository";
 
-
-const deleteUserUseCase = new DeleteUserUseCase();
+const userRepository = new MySQLUsersRepository();
+const deleteUserUseCase = new DeleteUserUseCase(
+  userRepository,
+);
 
 const deleteUserController = new DeleteUserController(
   deleteUserUseCase

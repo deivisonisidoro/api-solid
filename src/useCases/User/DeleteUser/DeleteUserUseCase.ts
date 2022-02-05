@@ -1,15 +1,18 @@
 import { getRepository } from "typeorm";
 import { User } from "../../../entities/User";
+import { IUsersRepository } from "../../../repositories/IUserRepository";
 import { IDeleteRequestDTO } from "./DeleteUserDTO";
 
 export class DeleteUserUseCase{
-
+  constructor(
+    private userRepository: IUsersRepository,
+  ){}
   async execute({id}: IDeleteRequestDTO){
-    const repo = getRepository(User);
-    if( !await repo.findOne(id)){
+    const userAlreadyExists = await this.userRepository.findById(id);
+    if( !userAlreadyExists){
       return new Error("User does not exits!");
     }
-    await repo.delete(id);
-
+   
+    await this.userRepository.delete(id)
   }
 }

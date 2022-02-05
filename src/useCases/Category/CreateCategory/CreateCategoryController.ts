@@ -7,12 +7,14 @@ export class CreateCategoryController{
   ){}
 
   async handle(request: Request, response: Response): Promise<Response>{
-    const {name, description}= request.body;
+    const {id, name, description, created_at}= request.body;
     
     try {
       const resullt = await this.createCategoryUseCase.execute({
+        id,
         name,
         description,
+        created_at
       })
       return response.status(201).json(resullt);
     } catch (error) {

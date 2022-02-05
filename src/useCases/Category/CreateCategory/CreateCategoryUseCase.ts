@@ -1,18 +1,22 @@
 import { getRepository } from "typeorm";
 import { Category } from "../../../entities/Category";
+import { ICategoryRepository } from "../../../repositories/ICategoryRepository";
 import { ICreateCategoryRequestDTO } from "./CreateCategoryDTO";
 
 
 export class CreateCategoryUseCase{
+  constructor(
+    private categoryRepository: ICategoryRepository,
 
+  ){}
   async execute(data: ICreateCategoryRequestDTO): Promise<Category | Error> {
-    const repo = getRepository(Category);
-    if(await repo.findOne(data.name)){
+    const categoryAlreadyExists = await this.categoryRepository.findByName(data.name);
+    if(categoryAlreadyExists){
       return new Error("Category already exists.")
     }
-    const category = repo.create(data);
+    const category = await this.categoryRepository.create(data);
 
-    await repo.save(category);
+    await this.categoryRepository.save(category);
     return category;
   }
 }

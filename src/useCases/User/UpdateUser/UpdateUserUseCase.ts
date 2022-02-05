@@ -1,20 +1,22 @@
 import { getRepository } from "typeorm";
 import { User } from "../../../entities/User";
+import { IUsersRepository } from "../../../repositories/IUserRepository";
 import { IUpdateRequestDTO } from "./UpdateUserDTO";
 
 export class UpdateUserUseCase{
+  constructor(
+    private userRepository: IUsersRepository,
+  ){}
   async execute({id, name, email, password}: IUpdateRequestDTO ){
-    const repo = getRepository(User);
-    const user = await repo.findOne(id);
-    if(!user){
-      return new Error("User does not exist");
+    const userAlreadyExists = await this.userRepository.findById(id);
+    if(!userAlreadyExists){
+      return new Error("User does not exits!");
     }
-    user.name = name ? name : user.name;
-    user.email = email ? email : user.email;
-    user.password = password ? password : user.password;
+    userAlreadyExists.name = name ? name : userAlreadyExists.name;
+    userAlreadyExists.email = email ? email : userAlreadyExists.email;
+    userAlreadyExists.password = password ? password : userAlreadyExists.password;
 
-    await repo.save(user);
-
-    return user;
+    await this.userRepository.save(userAlreadyExists);
+    return userAlreadyExists;
   }
 }

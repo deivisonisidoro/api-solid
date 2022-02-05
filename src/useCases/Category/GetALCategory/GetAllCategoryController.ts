@@ -7,8 +7,6 @@ export class GetAllCategoryController{
   ){}
 
   async handle(request: Request, response: Response): Promise<Response>{
-
-    
     try {
       const categories = await this.getAllCategoryUseCase.execute()
       return response.status(201).json(categories);

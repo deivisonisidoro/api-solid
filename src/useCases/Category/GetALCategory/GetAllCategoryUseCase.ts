@@ -1,10 +1,11 @@
-import { getRepository } from "typeorm";
-import { Category } from "../../../entities/Category";
+import { ICategoryRepository } from "../../../repositories/ICategoryRepository";
 
 export class GetAllCategoryUseCase{
+  constructor(
+    private categoryRepository: ICategoryRepository,
+  ){}
   async execute(){
-    const repo = getRepository(Category);
-    const category = await repo.find();
+    const category = await this.categoryRepository.findAll();
     return category;
   }
 }

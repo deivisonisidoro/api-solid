@@ -7,19 +7,18 @@ export class CreateUserController{
   ){}
 
   async handle(request: Request, response: Response): Promise<Response>{
-    const {name, email, password}= request.body;
-    
-    try {
-      const resullt = await this.createUserCase.execute({
-        name,
-        email,
-        password
-      })
-      return response.status(201).json(resullt);
-    } catch (error) {
-      return response.status(400).json({
-        message: error.message || "Unexpected error."
-      })
+    const {id, name, email, password, created_at}= request.body;
+    const result = await this.createUserCase.execute({
+      id,
+      name,
+      email,
+      password,
+      created_at
+    })
+    if(result instanceof Error){
+      return response.status(400).json(result.message);
     }
+    return response.status(201).json(result);
+
   }
 }
