@@ -1,10 +1,10 @@
 import { Router } from "express";
 import { createUserController } from "./useCases/CreateUser";
 
-const router = Router();
+const routes = Router();
 
-router.post('/user', (request, response)=>{
+routes.post('/user', (request, response)=>{
   return createUserController.handle(request, response);
 })
 
-export {router}
+export {routes}

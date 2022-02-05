@@ -4,13 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts"
+    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "typeorm": "tsnd node_modules/.bin/typeorm"
   },
   "dependencies": {
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
     "nodemailer": "^6.7.2",
     "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.41",
     "uuidv4": "^6.2.12"
   },
   "devDependencies": {

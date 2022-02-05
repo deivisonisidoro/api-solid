@@ -1,7 +1,9 @@
+import { getRepository } from "typeorm";
 import { User } from "../../entities/User";
 import { IMailProvider } from "../../providers/IMailProvider";
 import { IUsersRepository } from "../../repositories/IUserRepository";
 import { ICreateUserRequestDTO } from "./CreateUserDTO";
+
 
 export class CreateUserUseCase{
   
@@ -9,15 +11,14 @@ export class CreateUserUseCase{
     private userRepository: IUsersRepository,
     private mailProvider: IMailProvider,
   ){}
-  async execute(data: ICreateUserRequestDTO){
-    const userAlreadyExists = await this.userRepository.findByEmail(data.email);
-
-    if(userAlreadyExists){
-      throw new Error("User already exists.")
+  async execute(data: ICreateUserRequestDTO): Promise<User | Error> {
+    const repo = getRepository(User)
+    if(await repo.findOne(data.email)){
+      return new Error("User already exists.")
     }
-    const user = new User(data);
+    const user = repo.create(data);
 
-    await this.userRepository.save(user);
+ 
     await this.mailProvider.sendMail({
       to: {
         name: data.name,
@@ -30,5 +31,7 @@ export class CreateUserUseCase{
       subject: 'Seja bem vindo a plataforma',
       body: '<p>Você já pode fazer login na nossa plataforma.</p>'
     })
+    await repo.save(user);
+    return user;
   }
 }
