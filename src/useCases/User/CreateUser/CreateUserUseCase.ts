@@ -1,18 +1,16 @@
 import { getRepository } from "typeorm";
-import { User } from "../../entities/User";
-import { IMailProvider } from "../../providers/IMailProvider";
-import { IUsersRepository } from "../../repositories/IUserRepository";
+import { User } from "../../../entities/User";
+import { IMailProvider } from "../../../providers/IMailProvider";
 import { ICreateUserRequestDTO } from "./CreateUserDTO";
 
 
 export class CreateUserUseCase{
   
   constructor(
-    private userRepository: IUsersRepository,
     private mailProvider: IMailProvider,
   ){}
   async execute(data: ICreateUserRequestDTO): Promise<User | Error> {
-    const repo = getRepository(User)
+    const repo = getRepository(User);
     if(await repo.findOne(data.email)){
       return new Error("User already exists.")
     }
