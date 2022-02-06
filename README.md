@@ -11,3 +11,6 @@ Use command `yarn` to install all dependencies
 
 Use the `yarn start` command to run the application
 
+### Use System of Email
+
+Remove ".example" from "config.example" and add your credentials
