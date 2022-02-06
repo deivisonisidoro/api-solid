@@ -9,6 +9,8 @@ import { createUserController } from "./useCases/User/CreateUser";
 import { deleteUserController } from "./useCases/User/DeleteUser";
 import { getAllUserController } from "./useCases/User/GetAllUser";
 import { updateUserController } from "./useCases/User/UpdateUser";
+import { createVideoController } from "./useCases/Video/CreateVideo";
+import { getAllVideosController } from "./useCases/Video/GetAllVideos";
 
 
 const routes = Router();
@@ -41,4 +43,11 @@ routes.delete('/categories/:id', (request, response)=>{
   return deleteCategoryController.handle(request, response);
 });
 
+/* VIDEOS */
+routes.post('/videos', (request, response)=>{
+  return createVideoController.handle(request, response);
+});
+routes.get('/videos', (request, response)=>{
+  return getAllVideosController.handle(request, response);
+});
 export {routes}
