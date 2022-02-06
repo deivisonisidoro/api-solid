@@ -1,14 +1,14 @@
 import { getRepository } from "typeorm";
 import { Category } from "../../../entities/Category";
-import { ICategoryRepository } from "../../../repositories/ICategoryRepository";
+import { ICategoriesRepository } from "../../../repositories/ICategoriesRepository";
 import { IUpdateCategoryRequestDTO } from "./UpdateCategoryDTO";
 
 export class UpdateCategoryUseCase{
   constructor(
-    private categoryRepository: ICategoryRepository,
+    private updateCategoriesRepository: ICategoriesRepository,
   ){}
   async execute({id, name, description}: IUpdateCategoryRequestDTO ){
-    const categoryAlreadyExists = await this.categoryRepository.findById(id)
+    const categoryAlreadyExists = await this.updateCategoriesRepository.findById(id)
     if(!categoryAlreadyExists){
       return new Error("Category does not exist");
     }
@@ -16,7 +16,7 @@ export class UpdateCategoryUseCase{
     categoryAlreadyExists.name = name ? name : categoryAlreadyExists.name;
     categoryAlreadyExists.description = description ? description : categoryAlreadyExists.description;
 
-    await this.categoryRepository.save(categoryAlreadyExists);
+    await this.updateCategoriesRepository.save(categoryAlreadyExists);
     return categoryAlreadyExists;
   }
 }

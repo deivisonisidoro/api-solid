@@ -8,19 +8,16 @@ export class CreateCategoryController{
 
   async handle(request: Request, response: Response): Promise<Response>{
     const {id, name, description, created_at}= request.body;
-    
-    try {
-      const resullt = await this.createCategoryUseCase.execute({
-        id,
-        name,
-        description,
-        created_at
-      })
-      return response.status(201).json(resullt);
-    } catch (error) {
-      return response.status(400).json({
-        message: error.message || "Unexpected error."
-      })
+    const result = await this.createCategoryUseCase.execute({
+      id,
+      name,
+      description,
+      created_at
+    })
+    if(result instanceof Error ){
+      return response.status(400).json(result.message);
     }
+
+    return response.status(201).json(result);  
   }
 }

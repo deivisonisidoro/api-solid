@@ -1,11 +1,10 @@
 import { getRepository } from "typeorm";
 import { Category } from "../../entities/Category";
-import { ICategoryRepository } from "../ICategoryRepository";
+import { ICategoriesRepository } from "../ICategoriesRepository";
 
-export class MySQLCategoryRepository implements ICategoryRepository{
+export class MySQLCategoriesRepository implements ICategoriesRepository{
  
   async findByName(name: string): Promise<Category> {
-    console.log(name);
     
     const repo = getRepository(Category);
     const category = await repo.findOne({name});

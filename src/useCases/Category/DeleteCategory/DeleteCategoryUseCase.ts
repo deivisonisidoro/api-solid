@@ -1,18 +1,18 @@
 import { getRepository } from "typeorm";
 import { Category } from "../../../entities/Category";
-import { ICategoryRepository } from "../../../repositories/ICategoryRepository";
+import { ICategoriesRepository } from "../../../repositories/ICategoriesRepository";
 import { IDeleteCategoryRequestDTO } from "./DeleteCategoryDTO";
 
 export class DeleteCategoryUseCase{
   constructor(
-    private categoryRepository: ICategoryRepository,
+    private deleteCategoriesRepository: ICategoriesRepository,
   ){}
   async execute({id}: IDeleteCategoryRequestDTO){
-    const categoryAlreadyExists =  await this.categoryRepository.findById(id);
+    const categoryAlreadyExists =  await this.deleteCategoriesRepository.findById(id);
     if( !categoryAlreadyExists){
       return new Error("Category does not exits!");
     }
-    await this.categoryRepository.delete(id);
+    await this.deleteCategoriesRepository.delete(id);
 
   }
 }

@@ -1,6 +1,6 @@
 import { Category } from "../entities/Category";
 
-export interface ICategoryRepository {
+export interface ICategoriesRepository {
   findByName(name: string): Promise<Category>;
   findById(id: string): Promise<Category>;
   findAll(): Promise<Category[]>;

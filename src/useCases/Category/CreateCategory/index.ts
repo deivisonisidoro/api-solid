@@ -1,11 +1,11 @@
-import { MySQLCategoryRepository } from "../../../repositories/implementations/MySQLCategoryRepository";
+import { MySQLCategoriesRepository } from "../../../repositories/implementations/MySQLCategoriesRepository";
 import { CreateCategoryController } from "./CreateCategoryController";
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 
-const categoryRepository = new MySQLCategoryRepository();
+const createCategoriesRepository = new MySQLCategoriesRepository();
 
 const createCategoryUseCase = new CreateCategoryUseCase(
-  categoryRepository
+  createCategoriesRepository
 );
 
 const createCategoryController = new CreateCategoryController(

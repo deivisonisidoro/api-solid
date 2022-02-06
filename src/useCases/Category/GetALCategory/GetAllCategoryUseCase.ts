@@ -1,11 +1,11 @@
-import { ICategoryRepository } from "../../../repositories/ICategoryRepository";
+import { ICategoriesRepository } from "../../../repositories/ICategoriesRepository";
 
 export class GetAllCategoryUseCase{
   constructor(
-    private categoryRepository: ICategoryRepository,
+    private getAllCategoriesRepository: ICategoriesRepository,
   ){}
   async execute(){
-    const category = await this.categoryRepository.findAll();
+    const category = await this.getAllCategoriesRepository.findAll();
     return category;
   }
 }

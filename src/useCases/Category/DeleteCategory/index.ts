@@ -1,11 +1,11 @@
 import { DeleteCategoryUseCase } from "./DeleteCategoryUseCase";
 import {DeleteCategoryController} from "./DeleteCategoryController";
-import { MySQLCategoryRepository } from "../../../repositories/implementations/MySQLCategoryRepository";
+import { MySQLCategoriesRepository } from "../../../repositories/implementations/MySQLCategoriesRepository";
 
-const categoryRepository = new MySQLCategoryRepository();
+const deleteCategoriesRepository = new MySQLCategoriesRepository();
 
 const deleteCategoryUseCase = new DeleteCategoryUseCase(
-  categoryRepository
+  deleteCategoriesRepository
 );
 
 const deleteCategoryController = new DeleteCategoryController(

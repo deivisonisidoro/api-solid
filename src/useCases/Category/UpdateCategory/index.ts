@@ -1,12 +1,12 @@
 import { UpdateCategoryUseCase } from "./UpdateCategoryUseCase";
 import {UpdateCategoryController} from "./UpdateCategoryController";
-import { MySQLCategoryRepository } from "../../../repositories/implementations/MySQLCategoryRepository";
+import { MySQLCategoriesRepository } from "../../../repositories/implementations/MySQLCategoriesRepository";
 
-const categoryRepository = new MySQLCategoryRepository();
+const updateCategoriesRepository = new MySQLCategoriesRepository();
 
 
 const updateCategoryUseCase = new UpdateCategoryUseCase(
-  categoryRepository
+  updateCategoriesRepository
 );
 
 const updateCategoryController = new UpdateCategoryController(

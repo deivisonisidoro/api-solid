@@ -1,11 +1,12 @@
 import { GetAllCategoryUseCase } from "./GetAllCategoryUseCase";
 import {GetAllCategoryController} from "./GetAllCategoryController";
-import { MySQLCategoryRepository } from "../../../repositories/implementations/MySQLCategoryRepository";
+import { MySQLCategoriesRepository } from "../../../repositories/implementations/MySQLCategoriesRepository";
 
-const categoryRepository = new MySQLCategoryRepository();
+const getAllCategoriesRepository = new MySQLCategoriesRepository();
+
 
 const getAllCategoryUseCase = new GetAllCategoryUseCase(
-  categoryRepository
+  getAllCategoriesRepository
 );
 
 const getAllCategoryController = new GetAllCategoryController(
