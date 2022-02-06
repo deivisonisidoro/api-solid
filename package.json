@@ -7,11 +7,6 @@
     "start": "tsnd --transpile-only  --trace-deprecation --respawn --ignore-watch node_modules src/server.ts",
     "typeorm": "tsnd node_modules/.bin/typeorm"
   },
-  "husky":{
-    "hooks":{
-      "commit-msg": "commitlint -E HUSKY_GIT_PARMS"
-    }
-  },
   "dependencies": {
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
