@@ -1,3 +1,4 @@
+import { hash } from "bcryptjs";
 import { getRepository } from "typeorm";
 import { User } from "../../../entities/User";
 import { IUsersRepository } from "../../../repositories/IUserRepository";
@@ -12,9 +13,11 @@ export class UpdateUserUseCase{
     if(!userAlreadyExists){
       return new Error("User does not exits!");
     }
+    const passwordHash = await hash(password, 8)
+
     userAlreadyExists.name = name ? name : userAlreadyExists.name;
     userAlreadyExists.email = email ? email : userAlreadyExists.email;
-    userAlreadyExists.password = password ? password : userAlreadyExists.password;
+    userAlreadyExists.password = password ? passwordHash : userAlreadyExists.password;
 
     await this.userRepository.save(userAlreadyExists);
     return userAlreadyExists;
