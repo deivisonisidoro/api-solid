@@ -5,6 +5,6 @@ export interface IVideosRepository {
   findById(id: string): Promise<Video>;
   findAll(): Promise<Video[]>;
   delete(id: string): Promise<void>;
-  create(video: Object): Promise<Video>;
+  create(video: unknown): Promise<Video>;
   save(video: Video): Promise<void>;
 }
