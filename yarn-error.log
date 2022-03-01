@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add @typescript-eslint/parser @typescript-eslint/eslint-plugineslint
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add jest
 
 PATH: 
   /home/deivison_isidoro/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/deivison_isidoro/Android/Sdk/emulator:/home/deivison_isidoro/Android/Sdk/tools:/home/deivison_isidoro/Android/Sdk/tools/bin:/home/deivison_isidoro/Android/Sdk/platform-tools:/home/deivison_isidoro/Android/Sdk/emulator:/home/deivison_isidoro/Android/Sdk/tools:/home/deivison_isidoro/Android/Sdk/tools/bin:/home/deivison_isidoro/Android/Sdk/platform-tools
@@ -14,17 +14,12 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@typescript-eslint%2feslint-plugineslint: Not found
-      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
-      at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
-      at Request.emit (node:events:390:28)
-      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141721:10)
-      at Request.emit (node:events:390:28)
-      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141643:12)
-      at Object.onceWrapper (node:events:509:28)
-      at IncomingMessage.emit (node:events:402:35)
-      at endReadableNT (node:internal/streams/readable:1343:12)
-      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+  SyntaxError: /home/deivison_isidoro/.cache/yarn/v6/npm-@babel-types-7.17.0-a826e368bccb6b3d84acd76acad5c0d87342390b-integrity/node_modules/@babel/types/.yarn-metadata.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
 
 npm manifest: 
   {

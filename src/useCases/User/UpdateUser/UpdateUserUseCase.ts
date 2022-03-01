@@ -1,6 +1,4 @@
 import { hash } from "bcryptjs";
-import { getRepository } from "typeorm";
-import { User } from "../../../entities/User";
 import { IUsersRepository } from "../../../repositories/IUserRepository";
 import { IUpdateRequestDTO } from "./UpdateUserDTO";
 
