@@ -9,21 +9,28 @@
         "airbnb-base",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
         "prettier/@typescript-eslint",
         "prettier/@typescript-airbnb-base"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
+        "ject": "tsconfig.json",
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
         "@typescript-eslint",
+        "@typescript-eslint/eslint-plugin",
         "eslint:recommended",
         "prettier"
     ],
     "rules": {
         "pettier/pettier": "error",
-        "space-before-function-paren": "off"
+        "space-before-function-paren": "off",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-explicit-any": "off"
     }
 }

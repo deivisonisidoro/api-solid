@@ -11,7 +11,7 @@ export class CreateUserUseCase{
     private userRepository: IUsersRepository,
     private mailProvider: IMailProvider,
   ){}
-  async execute({email, name, password}: ICreateUserRequestDTO): Promise<User | Error> {
+  async execute({email, name, password}: ICreateUserRequestDTO) {
     const userAlreadyExists = await this.userRepository.findByEmail(email);
    
 

@@ -8,10 +8,8 @@ export class DeleteUserController{
   async handle(request: Request, response: Response){
 
     const {id} = request.params;
-    const result = await this.deleteUserCase.execute({id});
-    if(result instanceof Error){
-      return response.status(400).json(result.message);
-    }
+    const {name, email, password} = request.body;
+    await this.deleteUserCase.execute({id, name, email, password});
     return response.status(204).end();
   }
 }
