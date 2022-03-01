@@ -22,18 +22,18 @@ export class CreateUserUseCase{
     const passwordHash = await hash(password, 8)
     const user = await this.userRepository.create({email, name, password: passwordHash,});
  
-    await this.mailProvider.sendMail({
-      to: {
-        name: name,
-        email: email,
-      },
-      from:{
-        name: 'Equipe do Meu App',
-        email: "equipe@meuapp.com"
-      },
-      subject: 'Seja bem vindo a plataforma',
-      body: '<p>Você já pode fazer login na nossa plataforma.</p>'
-    })
+    // await this.mailProvider.sendMail({
+    //   to: {
+    //     name: name,
+    //     email: email,
+    //   },
+    //   from:{
+    //     name: 'Equipe do Meu App',
+    //     email: "equipe@meuapp.com"
+    //   },
+    //   subject: 'Seja bem vindo a plataforma',
+    //   body: '<p>Você já pode fazer login na nossa plataforma.</p>'
+    // })
     await this.userRepository.save(user);
     return user;
   }

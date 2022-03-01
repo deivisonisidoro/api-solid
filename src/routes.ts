@@ -20,16 +20,16 @@ import { refreshTokenUserController } from "./useCases/Authenticate/GenaerateTok
 const routes = Router();
 
 /* USER */
-routes.post('/user', (request, response)=>{
+routes.post('/users', (request, response)=>{
   return createUserController.handle(request, response);
 });
-routes.get('/user', (request, response)=>{
+routes.get('/users', (request, response)=>{
   return getAllUserController.handle(request, response);
 });
-routes.put('/user/:id', (request, response)=>{
+routes.put('/users/:id', (request, response)=>{
   return updateUserController.handle(request, response);
 });
-routes.delete('/user/:id', (request, response)=>{
+routes.delete('/users/:id', (request, response)=>{
   return deleteUserController.handle(request, response);
 });
 
