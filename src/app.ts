@@ -3,7 +3,7 @@ import express,  { NextFunction, Response, Request } from "express";
 import "express-async-errors";
 import { routes } from "./routes";
 import "./database";
-
+import "dotenv/config";
 const app = express();
 
 app.use(express.json());
