@@ -21,7 +21,7 @@ export class MySQLCategoriesRepository implements ICategoriesRepository {
     return category;
   }
 
-  async create(data: Category): Promise<Category> {
+  async create(data: unknown): Promise<Category> {
     const repo = getRepository(Category);
     const category = repo.create(data);
     return category;

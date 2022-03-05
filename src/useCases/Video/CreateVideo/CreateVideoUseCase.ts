@@ -8,11 +8,11 @@ export class CreateVideoUseCase{
     private createVideosRepository: IVideosRepository,
     private createCategoriesRepository: ICategoriesRepository,
   ){}
-  async execute({ name, description, duration, category_id}: ICreateVideoRequestDTO):Promise<Video |Error>{
+  async execute({ name, description, duration, category_id}: ICreateVideoRequestDTO){
     const categoryAlreadyExists = await this.createCategoriesRepository.findById(category_id);
     
     if(!categoryAlreadyExists){
-      return new Error("Category does not exist");
+      throw new Error("Category does not exist!");
     }
 
     const video = await this.createVideosRepository.create({name, description, duration, category_id})

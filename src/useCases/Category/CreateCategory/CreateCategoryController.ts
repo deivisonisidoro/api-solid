@@ -14,9 +14,7 @@ export class CreateCategoryController{
       description,
       created_at
     })
-    if(result instanceof Error ){
-      return response.status(400).json(result.message);
-    }
+    
 
     return response.status(201).json(result);  
   }

@@ -9,10 +9,11 @@ export class CreateCategoryUseCase{
     private createCategoriesRepository: ICategoriesRepository,
 
   ){}
-  async execute(data: ICreateCategoryRequestDTO): Promise<Category | Error> {
+  async execute(data: ICreateCategoryRequestDTO) {
+  
     const categoryAlreadyExists = await this.createCategoriesRepository.findByName(data.name);
     if(categoryAlreadyExists){
-      return new Error("Category already exists.")
+      throw new Error("Category already exists.")
     }
     const category = await this.createCategoriesRepository.create(data);
 
