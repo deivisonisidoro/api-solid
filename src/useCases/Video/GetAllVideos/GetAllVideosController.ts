@@ -9,7 +9,7 @@ export class GetAllVideosController{
   async handle(request: Request, response: Response): Promise<Response>{
     try {
       const categories = await this.getAllVideosUseCase.execute()
-      return response.status(201).json(categories);
+      return response.status(200).json(categories);
     } catch (error) {
       return response.status(400).json({
         message: error.message || "Unexpected error."
