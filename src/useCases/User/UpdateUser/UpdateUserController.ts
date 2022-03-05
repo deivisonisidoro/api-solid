@@ -11,10 +11,7 @@ export class UpdateUserController{
     const {name,email, password} = request.body;
 
     const result = await this.updateUserUseCase.execute({id, name, password,email});
-    if(result instanceof Error){
-      return response.status(400).json(result.message);
-    }
+    
     return response.status(200).json(result);
-
   }
 }

@@ -1,15 +1,15 @@
 import { hash } from "bcryptjs";
 import { IUsersRepository } from "../../../repositories/IUserRepository";
-import { IUpdateRequestDTO } from "./UpdateUserDTO";
+import { IUpdateUserRequestDTO } from "./UpdateUserDTO";
 
 export class UpdateUserUseCase{
   constructor(
     private userRepository: IUsersRepository,
   ){}
-  async execute({id, name, email, password}: IUpdateRequestDTO ){
+  async execute({id, name, email, password}: IUpdateUserRequestDTO ){
     const userAlreadyExists = await this.userRepository.findById(id);
-    if(!userAlreadyExists){
-      return new Error("User does not exits!");
+    if (!userAlreadyExists) {
+      throw new Error("User does not exits!");
     }
     const passwordHash = await hash(password, 8)
 
