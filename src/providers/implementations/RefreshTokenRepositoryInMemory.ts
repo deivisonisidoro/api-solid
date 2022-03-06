@@ -30,13 +30,14 @@ export class RefreshTokenRepositoryInMemory implements IMemoryRefreshTokenProvid
   }
   async findId(id: string): Promise<RefreshToken> {
     const token = this.refresh_token.find((refresh_token) => refresh_token.id === id);
+    
     return token;
   }
   async save(refresh_token: RefreshToken): Promise<void> {
     this.refresh_token.push(refresh_token);
   } 
-  async generateToken(token: string): Promise<Object> {
-    const generatedToken  = sign({}, "teste", {
+  async generateToken(token: string): Promise<string> {
+    const generatedToken = sign({}, "teste", {
       subject: token,
       expiresIn: "20s"
     });

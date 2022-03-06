@@ -10,7 +10,7 @@ export class RefreshTokenUserUseCase{
     const refreshToken = await this.generateRefreshTokenProvider.findId(refresh_token);
     
     if (!refreshToken) {
-      return new Error("Refresh token is invalid.")
+      throw new Error("Refresh token is invalid.")
     }
 
     const refreshTokenExpired = dayjs().isAfter(dayjs.unix(refreshToken.expires_in));

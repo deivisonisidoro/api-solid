@@ -22,8 +22,8 @@ export class GenerateRefreshToken implements IRefreshTokenProvider{
     const repo = getRepository(RefreshToken);
     repo.save(refresh_token);
   } 
-  async generateToken(token: string): Promise<Object> {
-    const generatedToken  = sign({}, "teste", {
+  async generateToken(token: string): Promise<string> {
+    const generatedToken = sign({}, "teste", {
       subject: token,
       expiresIn: "20s"
     });
