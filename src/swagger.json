@@ -1,7 +1,7 @@
 {
   "openapi":"3.0.0",
   "info": { 
-    "title": "LOL DESIGN API",
+    "title": "Solid API",
     "description": "This api has as main objective the control of the calls made by the clients",
     "contact": {
       "email": "deivisonisidoro@gmail.com"
@@ -61,7 +61,7 @@
         "tags": ["Users"],
         "responses":{
           "400": {
-            "description": "User already exists."
+            "description": "No user found"
           },
           "200":{
             "description": "OK",
@@ -112,10 +112,10 @@
         },
         "responses":{
           "400": {
-            "description": "User already exists."
+            "description": "User does not exits!"
           },
-          "201":{
-            "description": "Created",
+          "200":{
+            "description": "Updated",
             "content": {
               "application/json":{
                 "schema": {
@@ -135,13 +135,145 @@
           {
             "name": "id",
             "in": "path",
-            "description": "User's id for update",
+            "description": "User's id for delete",
             "required": true
           }
         ],
         "responses":{
           "400": {
-            "description": "User already exists."
+            "description": "User does not exits!"
+          },
+          "204":{
+            "description": "Deleted"
+           }
+        }
+      }
+    },
+    "/categories":{
+      "post": {
+        "summary": "Register category",
+        "description": "This route will responsible for registering the new category",
+        "tags": ["Categories"],
+        "requestBody":{
+          "content": {
+            "application/json":{
+              "schema": {
+                "$ref": "#/components/schemas/Category"
+              },
+              "examples":{
+                "category":{
+                  "value":{
+                    "name": "Test Category",
+                    "description": "test category"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{
+          "400": {
+            "description": "Category already exists."
+          },
+          "201":{
+            "description": "Created",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"object",
+                  "$ref": "#/components/schemas/Category"
+                }
+              }
+            }
+           }
+        }
+      },
+      "get":{
+        "summary": "Get all categories",
+        "description": "This route will be responsible for get  all registered categories",
+        "tags": ["Categories"],
+        "responses":{
+          "400": {
+            "description": "No category found"
+          },
+          "200":{
+            "description": "OK",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"array",
+                  "items":{
+                    "$ref": "#/components/schemas/Category"
+                  }
+                }
+              }
+            }
+           }
+        }
+      }
+    },
+    "/categories/{id}": {
+      "put": {
+        "summary": "Update category",
+        "description": "This route will responsible for to do the update of a category",
+        "tags": ["Categories"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Category's id for update",
+            "required": true
+          }
+        ],
+        "requestBody":{
+          "content": {
+            "application/json":{
+              "schema": {
+                "$ref": "#/components/schemas/Category"
+              },
+              "examples":{
+                "category":{
+                  "value":{
+                    "name": "Test Category",
+                    "description": "test category"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{
+          "400": {
+            "description": "Category does not exist"
+          },
+          "200":{
+            "description": "Updated",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"object",
+                  "$ref": "#/components/schemas/Category"
+                }
+              }
+            }
+           }
+        }
+      },
+      "delete":{
+        "summary": "Delete category",
+        "description": "This route will responsible for to do the delete of a category",
+        "tags": ["Categories"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Category's id for delete",
+            "required": true
+          }
+        ],
+        "responses":{
+          "400": {
+            "description": "Category does not exist"
           },
           "204":{
             "description": "Deleted"
@@ -165,6 +297,24 @@
             "type": "string"
           },
           "password": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Category":{
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           },
           "created_at": {
