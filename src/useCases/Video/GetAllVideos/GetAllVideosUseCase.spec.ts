@@ -38,7 +38,7 @@ describe("Get all videos", ()=>{
       id:'test',
       name: "Test Category",
       description: 'A test category',
-      created_at: Date.now(),
+      created_at:  new Date(),
     }
     const category = await createCategoryUseCase.execute(categoryData);
 

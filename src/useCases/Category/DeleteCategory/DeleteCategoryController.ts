@@ -8,10 +8,8 @@ export class DeleteCategoryController{
   async handle(request: Request, response: Response){
 
     const {id} = request.params;
-    const result = await this.deleteCategoryCase.execute({id});
-    if(result instanceof Error){
-      return response.status(400).json(result.message);
-    }
+    const { description, name, created_at} = request.body;
+    await this.deleteCategoryCase.execute({id, description, name, created_at});
     return response.status(204).end();
   }
 }

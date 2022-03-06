@@ -14,7 +14,7 @@ describe("Create Video Controller", () => {
       id:'test',
       name: "Test Category",
       description: 'A test category',
-      created_at: Date.now(),
+      created_at: new Date(),
     });
     
     const response = await request(app).post("/videos").send({

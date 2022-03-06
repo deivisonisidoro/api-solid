@@ -14,7 +14,7 @@ describe("Create Category Controller", () => {
       id:'test',
       name: "Test Category",
       description: 'A test category',
-      created_at: Date.now(),
+      created_at:  new Date(),
     });
 
     expect(response.status).toBe(201);
@@ -26,14 +26,14 @@ describe("Create Category Controller", () => {
       id:'test',
       name: "Test Category",
       description: 'A test category',
-      created_at: Date.now(),
+      created_at:  new Date(),
     });
 
     const response = await request(app).post("/categories").send({
       id:'test',
       name: "Test Category",
       description: 'A test category',
-      created_at: Date.now(),
+      created_at:  new Date(),
     });
 
     expect(response.status).toBe(400);
