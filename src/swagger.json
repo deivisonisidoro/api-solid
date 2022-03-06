@@ -1,0 +1,178 @@
+{
+  "openapi":"3.0.0",
+  "info": { 
+    "title": "LOL DESIGN API",
+    "description": "This api has as main objective the control of the calls made by the clients",
+    "contact": {
+      "email": "deivisonisidoro@gmail.com"
+    },
+    "version": "1.0.0"
+  },
+  "servers":[
+    {
+      "url": "http://localhost:3333/",
+      "description": "API of test"
+    }
+  ],
+  "paths": {
+    "/users": {
+      "post": {
+        "summary": "Register user",
+        "description": "This route will responsible for registering the new user",
+        "tags": ["Users"],
+        "requestBody":{
+          "content": {
+            "application/json":{
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              },
+              "examples":{
+                "user":{
+                  "value":{
+                    "name": "Deivison Isidoro",
+                    "email": "deivison@loldesigner.com",
+                    "password": "12345"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{
+          "400": {
+            "description": "User already exists."
+          },
+          "201":{
+            "description": "Created",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"object",
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+           }
+        }
+      },
+      "get":{
+        "summary": "Get all users",
+        "description": "This route will be responsible for get  all registered users",
+        "tags": ["Users"],
+        "responses":{
+          "400": {
+            "description": "User already exists."
+          },
+          "200":{
+            "description": "OK",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"array",
+                  "items":{
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+           }
+        }
+      }
+    },
+    "/users/{id}": {
+      "put": {
+        "summary": "Update user",
+        "description": "This route will responsible for to do the update of a user",
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "User's id for update",
+            "required": true
+          }
+        ],
+        "requestBody":{
+          "content": {
+            "application/json":{
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              },
+              "examples":{
+                "user":{
+                  "value":{
+                    "name": "Deivison Isidoro",
+                    "email": "deivison@loldesigner.com",
+                    "password": "12345"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{
+          "400": {
+            "description": "User already exists."
+          },
+          "201":{
+            "description": "Created",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"object",
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+           }
+        }
+      },
+      "delete":{
+        "summary": "Delete user",
+        "description": "This route will responsible for to do the delete of a user",
+        "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "User's id for update",
+            "required": true
+          }
+        ],
+        "responses":{
+          "400": {
+            "description": "User already exists."
+          },
+          "204":{
+            "description": "Deleted"
+           }
+        }
+      }
+    }
+  },
+  "components":{
+    "schemas":{
+      "User":{
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}
