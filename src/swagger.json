@@ -320,9 +320,54 @@
            }
         }
       }
+    },
+    "/refresh-token":{
+      "post": {
+        "summary": "Refresh Token",
+        "description": "This route will responsible for to refresh token ",
+        "tags": ["Refresh Token"],
+        "requestBody":{
+          "content": {
+            "application/json":{
+              "schema": {
+                "$ref": "#/components/schemas/Token"
+              },
+              "examples":{
+                "user":{
+                  "value":{
+                    "refresh_token": "Copy the token ID generated at login"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{
+          "400": {
+            "description": "Refresh token is invalid."
+          },
+          "200":{
+            "description": "Ok",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"object",
+                  "$ref": "#/components/schemas/Token"
+                }
+              }
+            }
+           }
+        }
+      }
     }
   },
   "components":{
+    "securitySchemes":{
+      "BearerAuth":{
+        "type": "http",
+        "scheme": "bearer"
+      }
+    },
     "schemas":{
       "User":{
         "type": "object",
