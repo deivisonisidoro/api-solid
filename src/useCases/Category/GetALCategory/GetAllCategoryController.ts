@@ -9,7 +9,7 @@ export class GetAllCategoryController{
   async handle(request: Request, response: Response): Promise<Response>{
     try {
       const categories = await this.getAllCategoryUseCase.execute()
-      return response.status(201).json(categories);
+      return response.status(200).json(categories);
     } catch (error) {
       return response.status(400).json({
         message: error.message || "Unexpected error."

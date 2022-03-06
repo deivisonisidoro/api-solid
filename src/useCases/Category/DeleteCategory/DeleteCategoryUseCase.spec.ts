@@ -26,7 +26,7 @@ describe("Delete Category", ()=>{
   })
   
 
-  it("should be able to delete an existing categoriy", async ()=>{
+  it("should be able to delete an existing category", async ()=>{
     const categoryData: IDeleteCategoryRequestDTO = {
       id:'test',
       name: "Test Category",

@@ -44,7 +44,7 @@ routes.post('/refresh-token', (request, response)=>{
 routes.post('/categories', (request, response)=>{
   return createCategoryController.handle(request, response);
 });
-routes.get('/categories', ensureAuthenticated, (request, response)=>{
+routes.get('/categories', (request, response)=>{
   return getAllCategoryController.handle(request, response);
 });
 routes.put('/categories/:id', (request, response)=>{
