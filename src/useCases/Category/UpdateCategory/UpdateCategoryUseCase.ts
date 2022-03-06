@@ -10,7 +10,7 @@ export class UpdateCategoryUseCase{
   async execute({id, name, description}: IUpdateCategoryRequestDTO ){
     const categoryAlreadyExists = await this.updateCategoriesRepository.findById(id)
     if(!categoryAlreadyExists){
-      return new Error("Category does not exist");
+      throw new Error("Category does not exist");
     }
     
     categoryAlreadyExists.name = name ? name : categoryAlreadyExists.name;
