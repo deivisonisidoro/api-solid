@@ -418,6 +418,14 @@
             "format": "date-time"
           }
         }
+      },
+      "Token":{
+        "type": "object",
+        "properties": {
+          "refresh_token": {
+            "type": "string"
+          }
+        }
       }
     }
   }
