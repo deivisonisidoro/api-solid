@@ -13,12 +13,12 @@ export class AuthenticateUserUseCase{
     const userAlreadyExists = await this.userRepository.findByEmail(email);
     
     if(!userAlreadyExists){
-      return new Error("Email or password incorret.")
+      throw new Error("Email or password incorret.")
     }
     const passwordMatch = compare(password, userAlreadyExists.password);
    
     if(!passwordMatch){
-      return new Error("Email or password incorret.")
+      throw new Error("Email or password incorret.")
     }
     await this.generateRefreshTokenProvider.delete(userAlreadyExists.id)
     const token = await this.generateRefreshTokenProvider.generateToken(userAlreadyExists.id);

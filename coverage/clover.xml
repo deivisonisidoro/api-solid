@@ -1,6 +1,1695 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1646142353785" clover="3.2.0">
-  <project timestamp="1646142353785" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1646578226581" clover="3.2.0">
+  <project timestamp="1646578226581" name="All files">
+    <metrics statements="1455" coveredstatements="1228" conditionals="152" coveredconditionals="142" methods="117" coveredmethods="98" elements="1724" coveredelements="1468" complexity="0" loc="1455" ncloc="1455" packages="20" files="58" classes="58"/>
+    <package name="config">
+      <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="mail.config.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/config/mail.config.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="16" type="stmt"/>
+        <line num="3" count="16" type="stmt"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="5" count="16" type="stmt"/>
+        <line num="6" count="16" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src">
+      <metrics statements="90" coveredstatements="89" conditionals="12" coveredconditionals="12" methods="0" coveredmethods="0"/>
+      <file name="app.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/app.ts">
+        <metrics statements="26" coveredstatements="26" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="17" count="9" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="20" count="9" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="24" count="9" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+      <file name="routes.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/routes.ts">
+        <metrics statements="64" coveredstatements="63" conditionals="11" coveredconditionals="11" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="45" count="8" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.database">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/database/index.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.database.migrations">
+      <metrics statements="180" coveredstatements="36" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
+      <file name="1644065139009-CreateUsers.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/database/migrations/1644065139009-CreateUsers.ts">
+        <metrics statements="42" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+      <file name="1644079935515-CreateCategories.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/database/migrations/1644079935515-CreateCategories.ts">
+        <metrics statements="38" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+      </file>
+      <file name="1644080225804-CreateVideos.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/database/migrations/1644080225804-CreateVideos.ts">
+        <metrics statements="54" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+      </file>
+      <file name="1644350774664-RefreshToken.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/database/migrations/1644350774664-RefreshToken.ts">
+        <metrics statements="46" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.entities">
+      <metrics statements="102" coveredstatements="102" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <file name="Category.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/entities/Category.ts">
+        <metrics statements="22" coveredstatements="22" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="46" type="stmt"/>
+        <line num="17" count="46" type="stmt"/>
+        <line num="18" count="46" type="stmt"/>
+        <line num="19" count="46" type="stmt"/>
+        <line num="20" count="46" type="stmt"/>
+        <line num="21" count="46" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="RefreshToken.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/entities/RefreshToken.ts">
+        <metrics statements="26" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="34" type="stmt"/>
+        <line num="21" count="34" type="stmt"/>
+        <line num="22" count="34" type="stmt"/>
+        <line num="23" count="34" type="stmt"/>
+        <line num="24" count="34" type="stmt"/>
+        <line num="25" count="34" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+      <file name="User.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/entities/User.ts">
+        <metrics statements="24" coveredstatements="24" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="45" type="stmt"/>
+        <line num="19" count="45" type="stmt"/>
+        <line num="20" count="45" type="stmt"/>
+        <line num="21" count="45" type="stmt"/>
+        <line num="22" count="45" type="stmt"/>
+        <line num="23" count="45" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+      <file name="Video.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/entities/Video.ts">
+        <metrics statements="30" coveredstatements="30" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="34" type="stmt"/>
+        <line num="25" count="34" type="stmt"/>
+        <line num="26" count="34" type="stmt"/>
+        <line num="27" count="34" type="stmt"/>
+        <line num="28" count="34" type="stmt"/>
+        <line num="29" count="34" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.helpers">
+      <metrics statements="36" coveredstatements="36" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+      <file name="testHelper.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/helpers/testHelper.ts">
+        <metrics statements="36" coveredstatements="36" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="44" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="44" type="stmt"/>
+        <line num="13" count="44" type="stmt"/>
+        <line num="14" count="44" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="22" type="stmt"/>
+        <line num="22" count="22" type="stmt"/>
+        <line num="23" count="22" type="stmt"/>
+        <line num="24" count="22" type="stmt"/>
+        <line num="25" count="22" type="stmt"/>
+        <line num="26" count="22" type="stmt"/>
+        <line num="27" count="22" type="stmt"/>
+        <line num="28" count="22" type="stmt"/>
+        <line num="29" count="22" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="22" type="stmt"/>
+        <line num="33" count="22" type="stmt"/>
+        <line num="34" count="22" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.providers.implementations">
+      <metrics statements="118" coveredstatements="98" conditionals="10" coveredconditionals="10" methods="13" coveredmethods="10"/>
+      <file name="GenerateRefreshToken.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/providers/implementations/GenerateRefreshToken.ts">
+        <metrics statements="37" coveredstatements="33" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+      <file name="MailtrapMailProvider.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/providers/implementations/MailtrapMailProvider.ts">
+        <metrics statements="32" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="16" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+        <line num="11" count="16" type="stmt"/>
+        <line num="12" count="16" type="stmt"/>
+        <line num="13" count="16" type="stmt"/>
+        <line num="14" count="16" type="stmt"/>
+        <line num="15" count="16" type="stmt"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="17" count="16" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+      <file name="RefreshTokenRepositoryInMemory.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/providers/implementations/RefreshTokenRepositoryInMemory.ts">
+        <metrics statements="49" coveredstatements="46" conditionals="5" coveredconditionals="5" methods="6" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.repositories.implementations">
+      <metrics statements="243" coveredstatements="223" conditionals="39" coveredconditionals="39" methods="39" coveredmethods="33"/>
+      <file name="CategoriesRepositoryInMemory.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/repositories/implementations/CategoriesRepositoryInMemory.ts">
+        <metrics statements="42" coveredstatements="42" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="28" count="8" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="39" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="9" type="stmt"/>
+        <line num="41" count="9" type="stmt"/>
+        <line num="42" count="6" type="stmt"/>
+      </file>
+      <file name="MySQLCategoriesRepository.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/repositories/implementations/MySQLCategoriesRepository.ts">
+        <metrics statements="39" coveredstatements="39" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="7" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+      <file name="MySQLUsersRepository.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/repositories/implementations/MySQLUsersRepository.ts">
+        <metrics statements="39" coveredstatements="39" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="37" count="8" type="stmt"/>
+        <line num="38" count="8" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+      <file name="MySQLVideosRepository.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/repositories/implementations/MySQLVideosRepository.ts">
+        <metrics statements="41" coveredstatements="30" conditionals="3" coveredconditionals="3" methods="6" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+      <file name="UsersRepositoryInMemory.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/repositories/implementations/UsersRepositoryInMemory.ts">
+        <metrics statements="43" coveredstatements="43" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="20" count="9" type="stmt"/>
+        <line num="21" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="27" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="32" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="7" type="stmt"/>
+        <line num="40" count="7" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+      </file>
+      <file name="VideosRepositoryInMemory.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/repositories/implementations/VideosRepositoryInMemory.ts">
+        <metrics statements="39" coveredstatements="30" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.Authenticate.AuthenticateUser">
+      <metrics statements="69" coveredstatements="67" conditionals="8" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <file name="AuthenticateUserController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Authenticate/AuthenticateUser/AuthenticateUserController.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="AuthenticateUserUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Authenticate/AuthenticateUser/AuthenticateUserUseCase.ts">
+        <metrics statements="32" coveredstatements="30" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Authenticate/AuthenticateUser/index.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.Authenticate.GenaerateToken">
+      <metrics statements="62" coveredstatements="36" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="2"/>
+      <file name="RefreshTokenUserController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Authenticate/GenaerateToken/RefreshTokenUserController.ts">
+        <metrics statements="17" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="RefreshTokenUserUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Authenticate/GenaerateToken/RefreshTokenUserUseCase.ts">
+        <metrics statements="28" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="11" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Authenticate/GenaerateToken/index.ts">
+        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.Category.CreateCategory">
+      <metrics statements="60" coveredstatements="60" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+      <file name="CreateCategoryController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/CreateCategory/CreateCategoryController.ts">
+        <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
+      <file name="CreateCategoryUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/CreateCategory/CreateCategoryUseCase.ts">
+        <metrics statements="24" coveredstatements="24" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="17" type="stmt"/>
+        <line num="10" count="17" type="stmt"/>
+        <line num="11" count="17" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="17" type="stmt"/>
+        <line num="14" count="17" type="stmt"/>
+        <line num="15" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="17" type="stmt"/>
+        <line num="19" count="17" type="stmt"/>
+        <line num="20" count="17" type="stmt"/>
+        <line num="21" count="17" type="stmt"/>
+        <line num="22" count="17" type="stmt"/>
+        <line num="23" count="17" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/CreateCategory/index.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.Category.DeleteCategory">
+      <metrics statements="46" coveredstatements="46" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <file name="DeleteCategoryController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/DeleteCategory/DeleteCategoryController.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="11" type="stmt"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="DeleteCategoryUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/DeleteCategory/DeleteCategoryUseCase.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/DeleteCategory/index.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.Category.GetALCategory">
+      <metrics statements="46" coveredstatements="42" conditionals="5" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <file name="GetAllCategoryController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/GetALCategory/GetAllCategoryController.ts">
+        <metrics statements="19" coveredstatements="15" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="GetAllCategoryUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/GetALCategory/GetAllCategoryUseCase.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/GetALCategory/index.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.Category.UpdateCategory">
+      <metrics statements="55" coveredstatements="55" conditionals="9" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <file name="UpdateCategoryController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/UpdateCategory/UpdateCategoryController.ts">
+        <metrics statements="17" coveredstatements="17" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="UpdateCategoryUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/UpdateCategory/UpdateCategoryUseCase.ts">
+        <metrics statements="22" coveredstatements="22" conditionals="6" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="17" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Category/UpdateCategory/index.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.User.CreateUser">
+      <metrics statements="76" coveredstatements="76" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <file name="CreateUserController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/CreateUser/CreateUserController.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+      <file name="CreateUserUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/CreateUser/CreateUserUseCase.ts">
+        <metrics statements="40" coveredstatements="40" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="16" type="stmt"/>
+        <line num="12" count="16" type="stmt"/>
+        <line num="13" count="16" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="15" type="stmt"/>
+        <line num="16" count="15" type="stmt"/>
+        <line num="17" count="15" type="stmt"/>
+        <line num="18" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="13" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+        <line num="24" count="13" type="stmt"/>
+        <line num="25" count="13" type="stmt"/>
+        <line num="26" count="13" type="stmt"/>
+        <line num="27" count="13" type="stmt"/>
+        <line num="28" count="13" type="stmt"/>
+        <line num="29" count="13" type="stmt"/>
+        <line num="30" count="13" type="stmt"/>
+        <line num="31" count="13" type="stmt"/>
+        <line num="32" count="13" type="stmt"/>
+        <line num="33" count="13" type="stmt"/>
+        <line num="34" count="13" type="stmt"/>
+        <line num="35" count="13" type="stmt"/>
+        <line num="36" count="13" type="stmt"/>
+        <line num="37" count="13" type="stmt"/>
+        <line num="38" count="13" type="stmt"/>
+        <line num="39" count="13" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/CreateUser/index.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.User.DeleteUser">
+      <metrics statements="45" coveredstatements="45" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <file name="DeleteUserController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/DeleteUser/DeleteUserController.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="11" type="stmt"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="DeleteUserUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/DeleteUser/DeleteUserUseCase.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/DeleteUser/index.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.User.GetAllUser">
+      <metrics statements="49" coveredstatements="45" conditionals="5" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <file name="GetAllUserController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/GetAllUser/GetAllUserController.ts">
+        <metrics statements="21" coveredstatements="17" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
+      <file name="GetAllUserUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/GetAllUser/GetAllUserUseCase.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/GetAllUser/index.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.User.UpdateUser">
+      <metrics statements="55" coveredstatements="55" conditionals="11" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <file name="UpdateUserController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/UpdateUser/UpdateUserController.ts">
+        <metrics statements="17" coveredstatements="17" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="UpdateUserUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/UpdateUser/UpdateUserUseCase.ts">
+        <metrics statements="23" coveredstatements="23" conditionals="8" coveredconditionals="5" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="17" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/User/UpdateUser/index.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.Video.CreateVideo">
+      <metrics statements="66" coveredstatements="64" conditionals="9" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <file name="CreateVideoController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Video/CreateVideo/CreateVideoController.ts">
+        <metrics statements="23" coveredstatements="21" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="CreateVideoUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Video/CreateVideo/CreateVideoUseCase.ts">
+        <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Video/CreateVideo/index.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.useCases.Video.GetAllVideos">
+      <metrics statements="46" coveredstatements="42" conditionals="5" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <file name="GetAllVideosController.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Video/GetAllVideos/GetAllVideosController.ts">
+        <metrics statements="19" coveredstatements="15" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="7" count="11" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="GetAllVideosUseCase.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Video/GetAllVideos/GetAllVideosUseCase.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/deivison_isidoro/Documentos/ProjetosEstudos/solid-api/src/useCases/Video/GetAllVideos/index.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

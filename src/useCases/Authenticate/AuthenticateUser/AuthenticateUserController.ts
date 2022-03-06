@@ -13,9 +13,7 @@ export class AuthenticateUserController{
       email,
       password
     })
-    if(result instanceof Error){
-      return response.status(400).json(result.message);
-    }
-    return response.json(result)
+    
+    return response.status(200).json(result)
   }
 }
