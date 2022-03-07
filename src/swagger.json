@@ -281,6 +281,61 @@
         }
       }
     },
+    "/videos": {
+      "post": {
+        "summary": "Create video",
+        "description": "This route will responsible for to do the create of a video",
+        "tags": ["Videos"],
+        "requestBody":{
+          "content": {
+            "application/json":{
+              "schema": {
+                "$ref": "#/components/schemas/Video"
+              },
+              "examples":{
+                "video":{
+                  "value":{
+                    "name": "Test Video",
+                    "duration": 1000,
+                    "description": "Test description video", 
+                    "category_id": "choose the category id and put it here"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{
+          "400": {
+            "description": "Video does not exist"
+          },
+          "200":{
+            "description": "Created",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"object",
+                  "$ref": "#/components/schemas/Video"
+                }
+              }
+            }
+           }
+        }
+      },
+      "get":{
+        "summary": "Get all videos",
+        "description": "This route will responsible for to do the all registered videos ",
+        "tags": ["Videos"],
+        "responses":{
+          "400": {
+            "description": "Video does not exist"
+          },
+          "200":{
+            "description": "Ok"
+           }
+        }
+      }
+    },
     "/login":{
       "post": {
         "summary": "Login user",
@@ -293,7 +348,7 @@
                 "$ref": "#/components/schemas/Login"
               },
               "examples":{
-                "user":{
+                "login":{
                   "value":{
                     "email": "deivison@loldesigner.com",
                     "password": "12345"
@@ -333,7 +388,7 @@
                 "$ref": "#/components/schemas/Token"
               },
               "examples":{
-                "user":{
+                "token":{
                   "value":{
                     "refresh_token": "Copy the token ID generated at login"
                   }
@@ -411,6 +466,30 @@
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Video":{
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "category_id": {
             "type": "string"
           },
           "created_at": {
