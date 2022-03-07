@@ -11,6 +11,14 @@ Use command `yarn` to install all dependencies
 
 Use the `yarn start` command to run the application
 
-### Use System of Email
+### Use System of Email and Typeorm
 
-Remove ".example" from "config.example" and add your credentials
+Remove ".example" from ".env.example" and put your credentials
+
+### Make Mihrations 
+
+It exists a way of to run migration in the Typeorm, just type: `yarn typeorm migration:run`, with this command you will create the tables in you database
+
+## Documantations
+
+Ir is possible to see the documentations of project when access the end point: `http://localhost:3333/api-docs`
