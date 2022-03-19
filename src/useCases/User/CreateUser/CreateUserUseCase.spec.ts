@@ -1,7 +1,5 @@
 import { CreateUserUseCase } from "./CreateUserUseCase"
-import { MailtrapMailProvider } from "../../../providers/implementations/MailtrapMailProvider";
 import { ICreateUserRequestDTO } from "./CreateUserDTO";
-import { IMailProvider } from "../../../providers/IMailProvider";
 import { TestHelper } from "../../../helpers/testHelper";
 import { IMemoryUserRepository } from "../../../repositories/IMemoryUserRepository";
 import { UsersRepositoryInMemory } from "../../../repositories/implementations/UsersRepositoryInMemory";
@@ -10,13 +8,11 @@ import { UsersRepositoryInMemory } from "../../../repositories/implementations/U
 describe("Create user", ()=>{
   let usersRepository: IMemoryUserRepository;
   let createUserUseCase: CreateUserUseCase;
-  let mailtrapMailProvider: IMailProvider;
   
   beforeAll(async ()=>{
     await TestHelper.instance.setupTestDB();
     usersRepository = new UsersRepositoryInMemory();
-    mailtrapMailProvider = new MailtrapMailProvider();
-    createUserUseCase = new CreateUserUseCase(usersRepository, mailtrapMailProvider);
+    createUserUseCase = new CreateUserUseCase(usersRepository);
   });
   afterAll(async ()=>{
     TestHelper.instance.teardownTestDB();

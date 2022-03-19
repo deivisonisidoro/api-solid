@@ -5,9 +5,7 @@ import { IAuthenticateUser } from "./AuthenticateDTO";
 import { TestHelper } from "../../../helpers/testHelper";
 import { IMemoryUserRepository } from "../../../repositories/IMemoryUserRepository";
 import { UsersRepositoryInMemory } from "../../../repositories/implementations/UsersRepositoryInMemory";
-import { MailtrapMailProvider } from "../../../providers/implementations/MailtrapMailProvider";
 import { CreateUserUseCase } from "../../User/CreateUser/CreateUserUseCase";
-import { IMailProvider } from "../../../providers/IMailProvider";
 import { IMemoryRefreshTokenProvider } from "../../../providers/IMemoryRefreshTokenProvider";
 import { RefreshTokenRepositoryInMemory } from "../../../providers/implementations/RefreshTokenRepositoryInMemory";
 
@@ -17,14 +15,13 @@ describe("Authenticate user", ()=>{
   let authenticateUserUseCase: AuthenticateUserUseCase;
   let generateRefreshTokenProvider: IMemoryRefreshTokenProvider;
   let createUserUseCase: CreateUserUseCase;
-  let mailtrapMailProvider: IMailProvider;
+
   
   beforeAll(async ()=>{
     await TestHelper.instance.setupTestDB();
     usersRepository = new UsersRepositoryInMemory();
-    mailtrapMailProvider = new MailtrapMailProvider();
     generateRefreshTokenProvider = new RefreshTokenRepositoryInMemory();
-    createUserUseCase = new CreateUserUseCase(usersRepository, mailtrapMailProvider);
+    createUserUseCase = new CreateUserUseCase(usersRepository);
     authenticateUserUseCase = new AuthenticateUserUseCase(usersRepository, generateRefreshTokenProvider);
   });
   afterAll(async ()=>{

@@ -1,24 +1,20 @@
 import { CreateUserUseCase } from "../CreateUser/CreateUserUseCase";
-import { MailtrapMailProvider } from "../../../providers/implementations/MailtrapMailProvider";
 import { IDeleteRequestDTO } from "./DeleteUserDTO";
-import { IUsersRepository } from "../../../repositories/IUserRepository";
+import { IMemoryUserRepository } from "../../../repositories/IMemoryUserRepository";
 import { TestHelper } from "../../../helpers/testHelper";
 import { DeleteUserUseCase } from "./DeleteUserUseCase";
-import { IMailProvider } from "../../../providers/IMailProvider";
 import { UsersRepositoryInMemory } from "../../../repositories/implementations/UsersRepositoryInMemory";
 
 
 describe("Delete user", ()=>{
-  let usersRepository: IUsersRepository;
+  let usersRepository: IMemoryUserRepository;
   let createUserUseCase: CreateUserUseCase;
   let deleteUserUseCase: DeleteUserUseCase;
-  let mailtrapMailProvider: IMailProvider;
   
   beforeAll(async ()=>{
     await TestHelper.instance.setupTestDB();
     usersRepository = new UsersRepositoryInMemory();
-    mailtrapMailProvider = new MailtrapMailProvider();
-    createUserUseCase = new CreateUserUseCase(usersRepository, mailtrapMailProvider);
+    createUserUseCase = new CreateUserUseCase(usersRepository,);
     deleteUserUseCase = new DeleteUserUseCase(
       usersRepository,
     );

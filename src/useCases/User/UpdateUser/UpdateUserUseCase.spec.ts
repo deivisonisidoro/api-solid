@@ -1,25 +1,21 @@
-import { CreateUserUseCase } from "../CreateUser/CreateUserUseCase"
-import { MySQLUsersRepository } from "../../../repositories/implementations/MySQLUsersRepository";
-import { MailtrapMailProvider } from "../../../providers/implementations/MailtrapMailProvider";
+import { CreateUserUseCase } from "../CreateUser/CreateUserUseCase";
 import { IUpdateUserRequestDTO } from "./UpdateUserDTO";
-import { IUsersRepository } from "../../../repositories/IUserRepository";
+import { IMemoryUserRepository } from "../../../repositories/IMemoryUserRepository";
 import { TestHelper } from "../../../helpers/testHelper";
 import { UpdateUserUseCase } from "./UpdateUserUseCase";
-import { IMailProvider } from "../../../providers/IMailProvider";
 import { UsersRepositoryInMemory } from "../../../repositories/implementations/UsersRepositoryInMemory";
 
 
 describe("Update user", ()=>{
-  let usersRepository: IUsersRepository;
+  let usersRepository: IMemoryUserRepository;
   let createUserUseCase: CreateUserUseCase;
   let updateUserUseCase: UpdateUserUseCase;
-  let mailtrapMailProvider: IMailProvider;
+
   
   beforeAll(async ()=>{
     await TestHelper.instance.setupTestDB();
     usersRepository = new UsersRepositoryInMemory();
-    mailtrapMailProvider = new MailtrapMailProvider();
-    createUserUseCase = new CreateUserUseCase(usersRepository, mailtrapMailProvider);
+    createUserUseCase = new CreateUserUseCase(usersRepository);
     updateUserUseCase = new UpdateUserUseCase(
       usersRepository,
     );
