@@ -5,3 +5,4 @@ npm-debug.*
 Dockerfile
 docker-compose.yml  
 yarn.lock
+tmp
