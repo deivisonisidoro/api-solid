@@ -18,6 +18,30 @@ export class CreateVideos1644080225804 implements MigrationInterface {
                         isUnique: true
                     },
                     {
+                        name: "url",
+                        type: "varchar",
+                        isUnique: true,
+                        isNullable: true,
+                    },
+                    {
+                        name: "key",
+                        type: "varchar",
+                        isUnique: true,
+                        isNullable: true,
+                    },
+                    {
+                        name: "file_name",
+                        type: "varchar",
+                        isUnique: true,
+                        isNullable: true,
+                    },
+                    {
+                        name: "size",
+                        type: "numeric",
+                        isUnique: true,
+                        isNullable: true,
+                    },
+                    {
                         name: "description",
                         type: "varchar",
                     },

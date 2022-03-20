@@ -1,6 +1,11 @@
 import { Router } from "express";
-/* MIDDLEWARERS */
+
+/* MIDDLEWARES */
 import { ensureAuthenticated } from "./middlewares/ensureAuthenticated";
+import multer from "multer";
+
+/* CONFIG */
+import multerConfig from "./config/multer";
 
 /*CONTROLLERS*/
 import { createCategoryController } from "./useCases/Category/CreateCategory";
@@ -15,6 +20,7 @@ import { updateUserController } from "./useCases/User/UpdateUser";
 import { createVideoController } from "./useCases/Video/CreateVideo";
 import { getAllVideosController } from "./useCases/Video/GetAllVideos";
 import { refreshTokenUserController } from "./useCases/Authenticate/GenaerateToken";
+import { uploadVideoController } from "./useCases/Video/UploadVideo";
 
 
 const routes = Router();
@@ -57,6 +63,9 @@ routes.delete('/categories/:id', (request, response)=>{
 /* VIDEOS */
 routes.post('/videos', (request, response)=>{
   return createVideoController.handle(request, response);
+});
+routes.post('/videos/:video_id', multer(multerConfig).single('file'), (request, response)=>{
+  return uploadVideoController.handle(request, response);
 });
 routes.get('/videos', (request, response)=>{
   return getAllVideosController.handle(request, response);
