@@ -5,6 +5,7 @@ import "./database";
 
 import express,  { NextFunction, Response, Request } from "express";
 import swaggerUi from'swagger-ui-express';
+import path from 'path';
 
 import { routes } from "./routes";
 import swaggerDocs from './swagger.json';
@@ -18,6 +19,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use(routes);
 
+app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp', 'uploads')));
 app.use(
   (err: Error, request: Request, response: Response, next: NextFunction) => {
     if (err instanceof Error) {

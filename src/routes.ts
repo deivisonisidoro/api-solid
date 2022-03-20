@@ -21,6 +21,7 @@ import { createVideoController } from "./useCases/Video/CreateVideo";
 import { getAllVideosController } from "./useCases/Video/GetAllVideos";
 import { refreshTokenUserController } from "./useCases/Authenticate/GenaerateToken";
 import { uploadVideoController } from "./useCases/Video/UploadVideo";
+import { deleteVideoController } from "./useCases/Video/DeleteVideo";
 
 
 const routes = Router();
@@ -69,5 +70,8 @@ routes.post('/videos/:video_id', multer(multerConfig).single('file'), (request, 
 });
 routes.get('/videos', (request, response)=>{
   return getAllVideosController.handle(request, response);
+});
+routes.delete('/videos/:id', (request, response)=>{
+  return deleteVideoController.handle(request, response);
 });
 export {routes}
