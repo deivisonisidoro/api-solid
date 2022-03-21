@@ -336,6 +336,52 @@
         }
       }
     },
+    "/videos/{video_id}":{
+      "post":{
+        "summary": "Upload video",
+        "description": "This route will responsible for to do the upload of a video",
+        "tags": ["Videos"],
+        "parameters": [
+          {
+            "name": "video_id",
+            "in": "path",
+            "description": "Videos's id for upload",
+            "required": true
+          }
+        ],
+        "requestBody":{
+          "content": {
+            "multipart/form-data":{
+              "schema": {
+                "type": "object",
+                "properties":{
+                  "file": {
+                    "type":"string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{
+          "400": {
+            "description": "Video does not exist!"
+          },
+          "200":{
+            "description": "Ok",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type":"object",
+                  "$ref": "#/components/schemas/Video"
+                }
+              }
+            }
+           }
+        }
+      }
+    },
     "/login":{
       "post": {
         "summary": "Login user",
@@ -481,6 +527,18 @@
             "type": "string"
           },
           "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "key": {
+            "type": "string"
+          },
+          "file_name": {
+            "type": "string"
+          },
+          "size": {
             "type": "string"
           },
           "description": {
