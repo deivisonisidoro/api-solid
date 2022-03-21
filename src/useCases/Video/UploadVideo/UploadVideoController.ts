@@ -17,7 +17,7 @@ export class UploadVideoController{
       key,
       file_name,
       size,
-      video_id
+      id:  video_id
     })
     if(result instanceof Error ){
       return response.status(400).json(result.message);

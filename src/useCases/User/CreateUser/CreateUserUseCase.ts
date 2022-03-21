@@ -19,7 +19,7 @@ export class CreateUserUseCase{
     const passwordHash = await hash(password, 8)
     const user = await this.userRepository.create({email, name, password: passwordHash,});
    
-    Queue.add('RegistrationMail', {user});
+    // Queue.add('RegistrationMail', {user});
 
     await this.userRepository.save(user);
     return user;

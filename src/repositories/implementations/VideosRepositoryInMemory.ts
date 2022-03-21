@@ -24,6 +24,7 @@ export class VideosRepositoryInMemory implements IMemoryVideoRepository {
     Object.assign(video, {
       id: uuid(),
     });
+  
     this.videos.push(video);
     return video;
   }

@@ -13,6 +13,7 @@
   "dependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/jsonwebtoken": "^8.5.8",
+    "@types/mz": "^2.7.4",
     "aws-sdk": "^2.1096.0",
     "bcryptjs": "^2.4.3",
     "bull": "^4.7.0",
@@ -26,6 +27,7 @@
     "multer-s3": "^2.10.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "mz": "^2.7.0",
     "nodemailer": "^6.7.2",
     "nodemon": "^2.0.15",
     "pg": "^8.7.3",

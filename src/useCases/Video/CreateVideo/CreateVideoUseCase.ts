@@ -1,4 +1,3 @@
-import { Video } from "../../../entities/Video";
 import { ICategoriesRepository } from "../../../repositories/ICategoriesRepository";
 import { IVideosRepository } from "../../../repositories/IVideosRepository";
 import { ICreateVideoRequestDTO } from "./CreateVideoDTO";
@@ -8,14 +7,15 @@ export class CreateVideoUseCase{
     private createVideosRepository: IVideosRepository,
     private createCategoriesRepository: ICategoriesRepository,
   ){}
-  async execute({ name, description, duration, category_id}: ICreateVideoRequestDTO){
-    const categoryAlreadyExists = await this.createCategoriesRepository.findById(category_id);
+  async execute(data: ICreateVideoRequestDTO){
+    
+    const categoryAlreadyExists = await this.createCategoriesRepository.findById(data.category_id);
     
     if(!categoryAlreadyExists){
       throw new Error("Category does not exist!");
     }
 
-    const video = await this.createVideosRepository.create({name, description, duration, category_id})
+    const video = await this.createVideosRepository.create(data)
 
     await  this.createVideosRepository.save(video)
 

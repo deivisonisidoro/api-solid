@@ -9,13 +9,13 @@ export class Video{
   @Column()
   public name: string;
   @Column()
-  public url: string;
+  public url?: string;
   @Column()
-  public key: string;
+  public key?: string;
   @Column()
-  public file_name: string;
+  public file_name?: string;
   @Column()
-  public size: number;
+  public size?: number;
   @Column()
   public description: string;
   @Column()

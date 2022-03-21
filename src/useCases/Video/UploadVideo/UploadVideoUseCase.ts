@@ -7,8 +7,8 @@ export class UploadVideoUseCase{
   constructor(
     private videosRepository: IVideosRepository,
   ){}
-  async execute({ url, key, file_name, size, video_id}: IUploadVideoRequestDTO){
-    const videoAlreadyExists = await this.videosRepository.findById(video_id);
+  async execute({ url, key, file_name, size, id}: IUploadVideoRequestDTO){
+    const videoAlreadyExists = await this.videosRepository.findById(id);
     
     if(!videoAlreadyExists){
       throw new Error("Video does not exist!");

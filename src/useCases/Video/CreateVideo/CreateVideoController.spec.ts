@@ -21,7 +21,11 @@ describe("Create Video Controller", () => {
       name: "Test Video",
       description: "A video test",
       duration: 1000,
-      category_id: categories.body.id
+      category_id: categories.body.id,
+      file_name: "file_name",
+      key: 'key',
+      size: 1111,
+      url: "URL"
     });
 
     expect(response.status).toBe(201);

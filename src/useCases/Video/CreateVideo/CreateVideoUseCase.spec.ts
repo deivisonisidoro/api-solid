@@ -1,5 +1,5 @@
 import { CreateVideoUseCase } from "./CreateVideoUseCase"
-import { ICreateVideoRequestDTO } from "./CreateVideoDTO";
+import { ICreateVideoRequestDTO } from "../CreateVideo/CreateVideoDTO";
 import { TestHelper } from "../../../helpers/testHelper";
 import { IMemoryVideoRepository } from "../../../repositories/IMemoryVideoRepository";
 import { VideosRepositoryInMemory } from "../../../repositories/implementations/VideosRepositoryInMemory";
@@ -40,12 +40,21 @@ describe("Create Video", ()=>{
       name: "Test Video",
       description: "A video test",
       duration: 1000,
-      category_id: category.id
+      category_id: category.id,
+      file_name: "file_name",
+      key: 'key',
+      size: 1111,
+      url: "URL"
     };
     const video = await createVideoUseCase.execute(videoData);
 
+    video.url = "url";
+    video.key = "key";
+    video.file_name = "file_name";
+    video.size = 1234;
+
     expect(video).toHaveProperty("id");
-    expect(video.name).toBe("Test Video");
+    expect(video.url).toBe("url");
   });
   it("should not be able to create an existing video", async () => {
     const categoryData: ICreateCategoryRequestDTO = {
