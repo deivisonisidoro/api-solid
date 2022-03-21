@@ -82,7 +82,7 @@
     "/users/{id}": {
       "put": {
         "summary": "Update user",
-        "description": "This route will responsible for to do the update of a user",
+        "description": "This route will responsible for to do the update a user",
         "tags": ["Users"],
         "parameters": [
           {
@@ -129,7 +129,7 @@
       },
       "delete":{
         "summary": "Delete user",
-        "description": "This route will responsible for to do the delete of a user",
+        "description": "This route will responsible for to do the delete a user",
         "tags": ["Users"],
         "parameters": [
           {
@@ -215,7 +215,7 @@
     "/categories/{id}": {
       "put": {
         "summary": "Update category",
-        "description": "This route will responsible for to do the update of a category",
+        "description": "This route will responsible for to do the update a category",
         "tags": ["Categories"],
         "parameters": [
           {
@@ -261,7 +261,7 @@
       },
       "delete":{
         "summary": "Delete category",
-        "description": "This route will responsible for to do the delete of a category",
+        "description": "This route will responsible for to do the delete a category",
         "tags": ["Categories"],
         "parameters": [
           {
@@ -284,7 +284,7 @@
     "/videos": {
       "post": {
         "summary": "Create video",
-        "description": "This route will responsible for to do the create of a video",
+        "description": "This route will responsible for to do the create a video",
         "tags": ["Videos"],
         "requestBody":{
           "content": {
@@ -339,7 +339,7 @@
     "/videos/{video_id}":{
       "post":{
         "summary": "Upload video",
-        "description": "This route will responsible for to do the upload of a video",
+        "description": "This route will responsible for to do the upload a video",
         "tags": ["Videos"],
         "parameters": [
           {
@@ -380,12 +380,33 @@
             }
            }
         }
+      },
+      "delete":{
+        "summary": "Delete video",
+        "description": "This route will responsible for to do the delete a video",
+        "tags": ["Videos"],
+        "parameters": [
+          {
+            "name": "video_id",
+            "in": "path",
+            "description": "Video's id for delete",
+            "required": true
+          }
+        ],
+        "responses":{
+          "400": {
+            "description": "Video does not exits!"
+          },
+          "204":{
+            "description": "Deleted"
+           }
+        }
       }
     },
     "/login":{
       "post": {
         "summary": "Login user",
-        "description": "This route will responsible for to do the login of user",
+        "description": "This route will responsible for to do the login user",
         "tags": ["Login"],
         "requestBody":{
           "content": {

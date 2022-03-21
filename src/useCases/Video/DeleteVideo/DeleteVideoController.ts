@@ -7,8 +7,8 @@ export class DeleteVideoController{
 
   async handle(request: Request, response: Response){
 
-    const {id} = request.params;
-    await this.deleteVideoCase.execute({id});
+    const {video_id} = request.params;
+    await this.deleteVideoCase.execute({id: video_id});
     return response.status(204).end();
   }
 }

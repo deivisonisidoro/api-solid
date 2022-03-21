@@ -71,7 +71,7 @@ routes.post('/videos/:video_id', multer(multerConfig).single('file'), (request, 
 routes.get('/videos', (request, response)=>{
   return getAllVideosController.handle(request, response);
 });
-routes.delete('/videos/:id', (request, response)=>{
+routes.delete('/videos/:video_id', (request, response)=>{
   return deleteVideoController.handle(request, response);
 });
 export {routes}
