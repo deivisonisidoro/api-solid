@@ -4,8 +4,8 @@ export class GetAllVideosUseCase{
   constructor(
     private getAllVideosRepository: IVideosRepository,
   ){}
-  async execute(){
-    const videos = await this.getAllVideosRepository.findAll();
+  async execute(page: number){
+    const videos = await this.getAllVideosRepository.findAll(page);
     return videos;
   }
 }

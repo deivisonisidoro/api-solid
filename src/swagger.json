@@ -54,28 +54,28 @@
             }
            }
         }
-      },
+      }
+    },
+    "/users/{page}":{
       "get":{
         "summary": "Get all users",
         "description": "This route will be responsible for get  all registered users",
         "tags": ["Users"],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "path",
+            "description": "Page number",
+            "required": true
+          }
+        ],
         "responses":{
           "400": {
             "description": "No user found"
           },
           "200":{
-            "description": "OK",
-            "content": {
-              "application/json":{
-                "schema": {
-                  "type":"array",
-                  "items":{
-                    "$ref": "#/components/schemas/User"
-                  }
-                }
-              }
+            "description": "OK"
             }
-           }
         }
       }
     },
@@ -321,11 +321,21 @@
             }
            }
         }
-      },
+      }
+    },
+    "/videos/{page}":{
       "get":{
         "summary": "Get all videos",
         "description": "This route will responsible for to do the all registered videos ",
         "tags": ["Videos"],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "path",
+            "description": "Page number",
+            "required": true
+          }
+        ],
         "responses":{
           "400": {
             "description": "Video does not exist"

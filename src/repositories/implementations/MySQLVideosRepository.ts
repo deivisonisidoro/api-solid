@@ -15,11 +15,14 @@ export class MySQLVideosRepository implements IVideosRepository {
     return video;
   }
 
-  async findAll(): Promise<Video[]> {
+  async findAll(pageNumber: number): Promise<Object> {
     const repo = getRepository(Video);
-    const video = await repo.find({
-      relations: ['category'],
-    });
+    const builder = repo.createQueryBuilder("videos");
+    const page = pageNumber || 1;
+    const perPage = 4;
+    const total = await builder.getCount();
+    builder.offset((page - 1) * perPage).limit(perPage);
+    const video = {body: await builder.getMany(), total, page , last_page: Math.ceil(total/perPage)};
     return video;
   }
 

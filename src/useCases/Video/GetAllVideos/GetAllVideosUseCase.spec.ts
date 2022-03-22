@@ -48,12 +48,13 @@ describe("Get all videos", ()=>{
       duration: 1000,
       category_id: category.id
     };
-    const video = await createVideoUseCase.execute(videoData);
-  
-    const videos = await getAllVideoUseCase.execute();
+    const page: number = 1;
 
-    
-    expect(videos).toEqual(expect.arrayContaining([video]));
+    await createVideoUseCase.execute(videoData);
+  
+    const videos = await getAllVideoUseCase.execute(page);
+
+    expect(videos).toHaveProperty("body");
   });
   
   

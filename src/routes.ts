@@ -30,7 +30,7 @@ const routes = Router();
 routes.post('/users', (request, response)=>{
   return createUserController.handle(request, response);
 });
-routes.get('/users', (request, response)=>{
+routes.get('/users/:page', (request, response)=>{
   return getAllUserController.handle(request, response);
 });
 routes.put('/users/:id', (request, response)=>{
@@ -68,7 +68,7 @@ routes.post('/videos', (request, response)=>{
 routes.post('/videos/:video_id', multer(multerConfig).single('file'), (request, response)=>{
   return uploadVideoController.handle(request, response);
 });
-routes.get('/videos', (request, response)=>{
+routes.get('/videos/:page', (request, response)=>{
   return getAllVideosController.handle(request, response);
 });
 routes.delete('/videos/:video_id', (request, response)=>{

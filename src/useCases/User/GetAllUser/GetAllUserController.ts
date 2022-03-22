@@ -7,10 +7,12 @@ export class GetAllUserController{
   ){}
 
   async handle(request: Request, response: Response): Promise<Response>{
-
+   
     
     try {
-      const users = await this.getAllUserUseCase.execute()
+      const {page} = request.params;
+      
+      const users = await this.getAllUserUseCase.execute(Number(page))
       return response.status(200).json(users);
     } catch (error) {
       return response.status(400).json({

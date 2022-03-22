@@ -15,8 +15,12 @@ export class VideosRepositoryInMemory implements IMemoryVideoRepository {
     return video;
   }
 
-  async findAll(): Promise<Video[]> {
-    const video = this.videos;
+  async findAll(pageNumber: number): Promise<Object> {
+    const videoArray = this.videos;
+    const page = pageNumber || 1;
+    const perPage = 4;
+    const total = videoArray.length;
+    const video = {body: videoArray, total, page , last_page: Math.ceil(total/perPage) }
     return video;
   }
 

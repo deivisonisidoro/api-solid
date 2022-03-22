@@ -34,6 +34,7 @@
     "reflect-metadata": "^0.1.13",
     "swagger-ui-express": "^4.3.0",
     "typeorm": "^0.2.41",
+    "typeorm-pagination": "^2.0.3",
     "uuidv4": "^6.2.12"
   },
   "devDependencies": {

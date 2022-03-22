@@ -30,12 +30,15 @@ describe("Get all users", ()=>{
       email: "test@test.com.br",
       password: "123456"
     };
-    const user = await createUserUseCase.execute(userData);
+    const page : number = 1;
+    
+    await createUserUseCase.execute(userData);
 
-    const users = await getAllUserUseCase.execute();
+    const users = await getAllUserUseCase.execute(page);
   
     
-    expect(users).toEqual(expect.arrayContaining([user]));
+    expect(users).toHaveProperty("body");
+    
   });
   
 });

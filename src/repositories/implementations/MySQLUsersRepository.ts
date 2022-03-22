@@ -15,9 +15,15 @@ export class MySQLUsersRepository implements IUsersRepository {
     return user;
   }
 
-  async findAll(): Promise<User[]> {
+  async findAll(pageNumber: number): Promise<Object> {
     const repo = getRepository(User);
-    const user = await repo.find();
+    const builder = repo.createQueryBuilder("users");
+    const page = pageNumber ||1;
+    const perPage = 4;
+    const total = await builder.getCount() 
+    builder.orderBy('name');
+    builder.offset((page - 1) * perPage).limit(perPage);
+    const user = {body: await builder.getMany(), total, page , last_page: Math.ceil(total/perPage)};
     return user;
   }
 

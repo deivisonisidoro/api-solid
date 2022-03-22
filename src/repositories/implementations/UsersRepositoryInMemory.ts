@@ -24,8 +24,12 @@ class UsersRepositoryInMemory implements IMemoryUserRepository {
     return user;
   }
 
-  async findAll(): Promise<User[]> {
-    const user = this.users;
+  async findAll(pageNumber: number): Promise<Object> {
+    const userArray = this.users;
+    const page = pageNumber || 1;
+    const perPage = 4;
+    const total = userArray.length;
+    const user = {body: userArray, total, page , last_page: Math.ceil(total/perPage) }
     return user;
   }
 
